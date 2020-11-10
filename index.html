@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(170, 45%, 43%); }
+  </style>
+  <style id="nav">
+      nav {
+        height: 16%;
+        margin-top: 4%;
+      }
+      nav img{
+        height: 8.6%;
+        margin: auto 0 auto 5.6%;
+      }
+      nav div span{
+        font-weight: 400;
+        margin-right: 30px;
+      }
+      nav div {
+        float: right;
+        width: 30%;
+      }
+  </style>
+</head>
+<body scroll=no>
+
+    <nav>
+        <img src="./images/logo.svg" alt="Logo">
+        <div>
+            <span>Features</span>
+            <span>Team</span>        
+            <span>Sign In</span>    
+        </div>
+    </nav>
+
+    <style id="seccion-1">
+        .seccion-1{
+            display: flex;
+        }
+        .seccion-1 article{
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            padding-left: 5.8%;
+        }
+        .seccion-1 img{
+            width: 48vw;
+            margin-right: 2vw;  
+        }
+        .seccion-1-form button{
+            background: none;
+            background-color: #3065f8;
+            color: white;
+            padding: 1.2% 7%;
+            border: none;
+            height: 118%;
+            border: none;
+            border: 1px solid gray  ;
+            border-radius: 3px;
+        }
+        .seccion-1-form input{
+            height: 90%;
+            width: 60%;
+            margin-right: 2%;   
+        }
+    </style>
+    <section class="seccion-1">
+        <article>
+            <h2>All your files in one secure location, accessible anywhere.</h2>
+            <p style="margin-bottom: 5%;">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+            <form action="" class="seccion-1-form">
+                <input type="email" placeholder="   Enter your email...">
+                <button type="submit">Get Started</button>
+            </form>
+        </article>
+        <img width="40%" src="./images/illustration-1.svg" alt="ilustracion-1">
+    </section>
+
+    <style id="seccion-2">
+        .seccion-2{
+        }
+        .seccion-2 div{
+            background-color: #f6f6fe;
+
+        }
+        .izquierda{
+            padding-bottom: 20px;
+            display: flex;
+        }
+        .ilustracion-2{
+            width: 30%;
+        }
+        .seccion-2 div article{
+            display: flex;
+            width: 60% ;
+            flex-direction: column;
+        }
+        .seccion-2 div article a{
+            color: #3c9f8f;
+        }
+        .seccion-2 div article a img{
+            color: #3c9f8f;
+        }
+        .seccion-2 div article h2{
+            margin-bottom: 30px;
+        }
+
+        #curve{
+            height: 9vh;
+            width: 100vw;  
+        }
+        body{
+            background-color: white;
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+        .cuadro-blanco{
+            padding: 11px;
+        }
+        .quotes{
+            height: 20px;
+        }
+        p{
+            margin: 0;
+        }
+        .ilustracion-2{
+            height: 100%;
+            align-self: center;
+        }
+    </style>
+    
+    <section class="seccion-2">
+         <img src="./images/bg-curve-desktop.svg" id="curve" alt="">
+       
+        <div class="izquierda">
+            <article style="margin-left: 5%;">
+                <h2 style="">Stay productive, wherever you are</h2>
+                <p>Never let location be an issue when accessing your files. Fylo has you 
+                covered for all of your file storage needs.</p>
+                <p>Securely share files and folders with friends, family and colleagues for 
+                live collaboration. No email attachments required!</p>
+
+                <a href="">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a>
+                <div class="cuadro-blanco" style="background-color: white; width: 60%; margin-right: 6.5%; margin-top: 5%;">
+                    <div style="background-color: white; display: block;">
+                        <img src="./images/icon-quotes.svg" alt="" class="quotes">
+                    </div>
+                    <p>Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.</p>
+                    <div style="display: flex; margin-top: 20px; background-color: white;">
+                        <div style="background-color: white;">
+                            <img style="height: 30px; border-radius: 50%; margin-right: 20px;" src="./images/avatar-testimonial.jpg" alt="">
+                        </div>
+                        <div style="display: flex; flex-direction: column; background-color: white;">
+                            <p style="font-weight: 700; font-size: 15px">Kyle Burton</>
+                            <p style="font-size: 10px;">Founder & CEO, Huddle</p>                       
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <img class="ilustracion-2" src="./images/illustration-2.svg" alt="">
+        </div>
+    </section>
+
+
+
+    <style>
+        .primer-footer article, .primer-footer form{
+            width: 50vw;
+            padding-left: 5.6%;
+
+        }
+        .primer-footer{
+            display: flex;
+            align-items: center;
+            height: 40vh;
+            color: white;
+            background-color: #585989;
+        }
+        .primer-footer form input{
+            width: 66%;
+            margin-bottom: 10px;
+            height: 30px;
+            padding-left: 14px;
+        }
+        .primer-footer form button{
+            background-color: #3065f8;
+            border: none;
+            color: white;
+            margin-bottom: 10px;
+            padding: 2% 7%;
+            border-radius: 3px;
+        }
+    </style>
+
+    <section class="primer-footer">
+        <article> 
+            <h2>Get early access today</h2>
+            <p style="font-size: 13px; width: 80%;">It only takes a minute to sign up and our free starter tier is extremely generous.If you have any questions, our support team would be happy to help you.</p>
+        </article>
+        <form action="">
+            <input type="text" placeholder="email@example.com">
+            <button>Get Started For Free</button>
+        </form>
+    </section>
+    <style>
+        .segundo-footer{
+            display: flex;
+            align-items: center;
+            height: 30vh;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #070439;
+            color: white;
+            padding: 5.6%;
+        }
+        .logo-footer{
+            filter: invert(100%);
+        }
+        ul{
+            list-style-type: none;
+            margin-top: 37%;
+        }
+        .hijo-segundo-footer{
+            width: 33vw;
+        }
+        .rrss{
+            height: 20px;
+            background-color: white;
+            border-radius: 100%;
+            border: 1px solid white;
+            margin-right: 4%;
+        }
+    </style>
+    <section class="segundo-footer">
+        <div class="hijo-segundo-footer">
+            <img class="logo-footer" src="./images/logo.svg" style="" alt="">
+            <div>
+                <img  style="width: 10px; margin-right: 10px; margin-top: 20px;" src="./images/icon-phone.svg" alt="">
+                <span>Phone: +1-543-123-4567</span>
+            </div>
+            <div>
+                <img  style="width: 10px; margin-right: 10px;margin-top: 20px;" src="./images/icon-email.svg" alt="">
+                <span>example@fylo.com</span>
+            </div>
+        </div>
+        <div class="hijo-segundo-footer" style="display: flex; justify-content: center;align-items: baseline;">
+            <ul style="display: flex; flex-direction: column;">
+                <li>About Us</li>
+                <li>Jobs</li>
+                <li>Press</li>
+                <li>Blog</li>
+            </ul>
+            <ul style="display: flex; flex-direction: column;">
+                <li>Contact Us</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="hijo-segundo-footer" style="margin-top: 4%; display: flex; justify-content: center;">
+            <img class="rrss" src="./images/facebook (1).svg" alt="">
+            <img class="rrss" src="./images/gorjeo (1).svg" alt="">
+            <img class="rrss" src="./images/instagram (1).svg" alt="">
+        </div>
+    </section>
+
+  
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Génesis Flores</a>.
+    </p>
+
+</body>
+</html>
